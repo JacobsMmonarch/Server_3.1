@@ -13,7 +13,7 @@ namespace Server_3.Controllers
         public async Task<IActionResult> Upload(IFormFile file)
         {
             if (file == null || file.Length == 0)
-                return BadRequest("File not selected");
+                return BadRequest("Файл не выбран!");
 
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "uploads", file.FileName);
 
@@ -22,7 +22,7 @@ namespace Server_3.Controllers
                 await file.CopyToAsync(stream);
             }
 
-            return Ok("File uploaded successfully");
+            return Ok("Файл сохранен в папку *uploads* ");
         }
 
         [HttpGet("download/{fileName}")]
@@ -31,7 +31,7 @@ namespace Server_3.Controllers
             var filePath = Path.Combine(Directory.GetCurrentDirectory(), "uploads", fileName);
 
             if (!System.IO.File.Exists(filePath))
-                return NotFound("File not found");
+                return NotFound("Файл не найден!");
 
             var memory = new MemoryStream();
             using (var stream = new FileStream(filePath, FileMode.Open))

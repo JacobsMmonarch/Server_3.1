@@ -1,0 +1,16 @@
+﻿/* Например, изменение цвета фона и цвета текста */
+.swagger-ui .topbar {
+    background-color: #000000;
+    color: white;
+}
+
+/* Например, изменение цвета кнопок */
+.swagger-ui .btn {
+    background-color: #ff0000;
+    color: white;
+}
+
+/* Например, изменение цвета заголовка */
+.swagger-ui .info__title {
+    color: #00d0ff;
+}
