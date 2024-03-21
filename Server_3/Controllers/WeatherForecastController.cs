@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using Microsoft.AspNetCore.Http;
 using System;
+using System.Collections.Generic;
 
 namespace Server_3.Controllers
 {
@@ -10,7 +11,7 @@ namespace Server_3.Controllers
     public class FileTransferController : ControllerBase
     {
         [HttpPost("upload")]
-        public async Task<IActionResult> Upload(IFormFile file)
+        public async Task<IActionResult> Upload([FromForm] IFormFile file) // Добавлен параметр file
         {
             if (file == null || file.Length == 0)
                 return BadRequest("Файл не выбран!");

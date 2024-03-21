@@ -1,0 +1,7 @@
+Ошибка при подключении к сервису http://localhost:5016: NotFound
+Ошибка при подключении к сервису 5016: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+Ошибка при подключении к сервису localhost:7216: The 'localhost' scheme is not supported.
+Ошибка при подключении к сервису 192.168.43.23: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+Ошибка при подключении к сервису localhost:7216: The 'localhost' scheme is not supported.
+Ошибка при подключении к сервису localhost:7119: The 'localhost' scheme is not supported.
+Ошибка при подключении к сервису 192.168.56.1: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
